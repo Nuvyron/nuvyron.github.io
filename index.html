@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description"
-    content="Conheça Gridroom: Puzzle Games, um jogo de lógica da Nuvyron. Informações sobre o jogo, contato e política de privacidade.">
+    content="Conheça os jogos da Nuvyron: Gridroom e BLOCS. Informações sobre os jogos, contato e políticas de privacidade.">
   <meta name="theme-color" content="#f6f8fc">
-  <title>Gridroom — Puzzle Games da Nuvyron</title>
+  <title>Jogos Nuvyron — Gridroom & BLOCS</title>
   <link rel="icon" href="./assets/gridroom-mark.png">
   <style>
     :root {
@@ -86,7 +86,12 @@
 
     .topbar nav a {
       text-decoration: none;
-      color: var(--muted)
+      color: var(--muted);
+      transition: color .15s ease
+    }
+
+    .topbar nav a:hover {
+      color: var(--text)
     }
 
     .catalog {
@@ -136,6 +141,10 @@
       transition: border-color .2s, box-shadow .2s
     }
 
+    .game-option:hover {
+      border-color: #b0c0e0
+    }
+
     .game-option[aria-pressed=true] {
       border-color: var(--primary);
       box-shadow: 0 0 0 1px var(--primary)
@@ -167,7 +176,13 @@
       width: 8px;
       height: 8px;
       background: var(--primary);
-      border-radius: 50%
+      border-radius: 50%;
+      opacity: 0;
+      transition: opacity .2s
+    }
+
+    .game-option[aria-pressed=true] .selected-dot {
+      opacity: 1
     }
 
     .hero {
@@ -436,27 +451,41 @@
 
 <body>
   <div class="page-shell">
-    <header class="topbar"><a class="wordmark" href="./" aria-label="Nuvyron, início">nuvyron<span>.</span></a>
-      <nav aria-label="Navegação principal"><a href="#jogos">Jogos</a><a href="./gridroom/">Privacidade</a><a
-          href="mailto:nuvyron@gmail.com">Contato</a></nav>
+    <header class="topbar">
+      <a class="wordmark" href="./" aria-label="Nuvyron, início">nuvyron<span>.</span></a>
+      <nav aria-label="Navegação principal">
+        <a href="#jogos">Jogos</a>
+        <a id="nav-policy" href="./gridroom/">Privacidade</a>
+        <a href="mailto:nuvyron@gmail.com">Contato</a>
+      </nav>
     </header>
+
     <section class="catalog" id="jogos" aria-labelledby="catalog-title">
       <div class="catalog-heading">
-        <h2 id="catalog-title">Nossos jogos</h2><span>01 jogo no catálogo</span>
+        <h2 id="catalog-title">Nossos jogos</h2>
+        <span>02 jogos no catálogo</span>
       </div>
-      <div class="game-carousel" role="group" aria-label="Selecione um jogo"><button class="game-option" type="button"
-          data-game="gridroom" aria-pressed="true" aria-controls="selected-game"><img src="./assets/gridroom-mark.png"
-            alt="" width="56" height="56"><span><strong>Gridroom</strong><small>Puzzle Games</small></span><span
-            class="selected-dot" aria-hidden="true"></span></button></div>
+      <div class="game-carousel" role="group" aria-label="Selecione um jogo">
+        <button class="game-option" type="button" data-game="gridroom" aria-pressed="true" aria-controls="selected-game">
+          <img src="./assets/gridroom-mark.png" alt="" width="56" height="56">
+          <span><strong>Gridroom</strong><small>Puzzle Games</small></span>
+          <span class="selected-dot" aria-hidden="true"></span>
+        </button>
+        <button class="game-option" type="button" data-game="blocs" aria-pressed="false" aria-controls="selected-game">
+          <img src="./assets/blocs-mark.png" alt="" width="56" height="56">
+          <span><strong>BLOCS</strong><small>Survivor RPG</small></span>
+          <span class="selected-dot" aria-hidden="true"></span>
+        </button>
+      </div>
     </section>
+
     <main id="selected-game" data-selected-game="gridroom">
+      <!-- O conteúdo é preenchido dinamicamente via JS a partir dos templates abaixo -->
       <section class="hero" aria-label="Apresentação do Gridroom">
         <section>
           <p class="eyebrow">Um jogo Nuvyron</p>
           <h1>Gridroom:<br />pense em cada movimento.</h1>
-          <p class="lead">Um puzzle de lógica sobre observar a grade, encontrar padrões e escolher o próximo passo.
-            Regras
-            claras, partidas diretas e espaço para pensar.</p>
+          <p class="lead">Um puzzle de lógica sobre observar a grade, encontrar padrões e escolher o próximo passo. Regras claras, partidas diretas e espaço para pensar.</p>
           <div class="actions">
             <a class="primary-btn" href="#sobre-jogo">Conheça o jogo</a>
             <a class="secondary-btn" href="./gridroom/">Política de privacidade</a>
@@ -473,13 +502,11 @@
         </div>
       </section>
 
-
       <section class="game-details" id="sobre-jogo" aria-labelledby="about-title">
         <div>
           <p class="section-label">Sobre o Gridroom</p>
           <h2 id="about-title">Seu próximo desafio<br>começa na grade.</h2>
-          <p>Gridroom: Puzzle Games reúne desafios de lógica em uma experiência direta. Observe os padrões, experimente
-            caminhos e retome a partida de onde parou.</p>
+          <p>Gridroom: Puzzle Games reúne desafios de lógica em uma experiência direta. Observe os padrões, experimente caminhos e retome a partida de onde parou.</p>
         </div>
         <dl class="detail-list">
           <div class="detail-row">
@@ -504,27 +531,215 @@
           </div>
         </dl>
       </section>
+
       <section class="support-strip" aria-labelledby="support-title">
         <div>
           <h2 id="support-title">Vamos conversar?</h2>
           <p>Para dúvidas sobre o Gridroom ou sua privacidade, fale com a Nuvyron.</p>
-        </div><a href="mailto:nuvyron@gmail.com">nuvyron@gmail.com ↗</a>
+        </div>
+        <a href="mailto:nuvyron@gmail.com">nuvyron@gmail.com ↗</a>
       </section>
     </main>
-    <footer><span>© 2026 Nuvyron</span>
-      <div class="footer-links"><a id="footer-policy" href="./gridroom/">Política de Privacidade — Gridroom</a><a
-          href="#jogos">Todos os jogos ↑</a></div>
+
+    <!-- Templates para cada jogo -->
+    <template id="template-gridroom">
+      <section class="hero" aria-label="Apresentação do Gridroom">
+        <section>
+          <p class="eyebrow">Um jogo Nuvyron</p>
+          <h1>Gridroom:<br />pense em cada movimento.</h1>
+          <p class="lead">Um puzzle de lógica sobre observar a grade, encontrar padrões e escolher o próximo passo. Regras claras, partidas diretas e espaço para pensar.</p>
+          <div class="actions">
+            <a class="primary-btn" href="#sobre-jogo">Conheça o jogo</a>
+            <a class="secondary-btn" href="./gridroom/">Política de privacidade</a>
+          </div>
+          <p class="hero-note">Da Nuvyron, estúdio independente de jogos digitais.</p>
+        </section>
+
+        <div class="showcase" aria-hidden="true">
+          <div class="board-card">
+            <div class="logo-art">
+              <img alt="Gridroom logo" src="./assets/gridroom-mark.png" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="game-details" id="sobre-jogo" aria-labelledby="about-title">
+        <div>
+          <p class="section-label">Sobre o Gridroom</p>
+          <h2 id="about-title">Seu próximo desafio<br>começa na grade.</h2>
+          <p>Gridroom: Puzzle Games reúne desafios de lógica em uma experiência direta. Observe os padrões, experimente caminhos e retome a partida de onde parou.</p>
+        </div>
+        <dl class="detail-list">
+          <div class="detail-row">
+            <dt>Desenvolvimento</dt>
+            <dd>Nuvyron</dd>
+          </div>
+          <div class="detail-row">
+            <dt>Conta</dt>
+            <dd>Sem cadastro para jogar.</dd>
+          </div>
+          <div class="detail-row">
+            <dt>Seu progresso</dt>
+            <dd>Partidas, resultados e preferências ficam no dispositivo.</dd>
+          </div>
+          <div class="detail-row">
+            <dt>No Android</dt>
+            <dd>Anúncios e compras opcionais são fornecidos por serviços do Google.</dd>
+          </div>
+          <div class="detail-row">
+            <dt>Privacidade</dt>
+            <dd><a href="./gridroom/">Leia a política do Gridroom ↗</a></dd>
+          </div>
+        </dl>
+      </section>
+
+      <section class="support-strip" aria-labelledby="support-title">
+        <div>
+          <h2 id="support-title">Vamos conversar?</h2>
+          <p>Para dúvidas sobre o Gridroom ou sua privacidade, fale com a Nuvyron.</p>
+        </div>
+        <a href="mailto:nuvyron@gmail.com">nuvyron@gmail.com ↗</a>
+      </section>
+    </template>
+
+    <template id="template-blocs">
+      <section class="hero" aria-label="Apresentação do BLOCS">
+        <section>
+          <p class="eyebrow">Um jogo Nuvyron</p>
+          <h1>BLOCS:<br />sobreviva em um mundo de blocos.</h1>
+          <p class="lead">Um RPG survivor 3D com exploração, coleta de recursos, expansão de vila e combate roguelite. Escolha suas armas, enfrente hordas e construa seu refúgio.</p>
+          <div class="actions">
+            <a class="primary-btn" href="#sobre-jogo">Conheça o jogo</a>
+            <a class="secondary-btn" href="./blocs/">Política de privacidade</a>
+          </div>
+          <p class="hero-note">Da Nuvyron, estúdio independente de jogos digitais.</p>
+        </section>
+
+        <div class="showcase" aria-hidden="true">
+          <div class="board-card">
+            <div class="logo-art">
+              <img alt="BLOCS logo" src="./assets/blocs-mark.png" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="game-details" id="sobre-jogo" aria-labelledby="about-title">
+        <div>
+          <p class="section-label">Sobre o BLOCS</p>
+          <h2 id="about-title">Explore, colete<br>e construa sua vila.</h2>
+          <p>BLOCS: Survivor RPG é uma jornada tática de sobrevivência em um mundo cúbico vivo. Personalize sua base, recrute moradores, explore cavernas e forje seu arsenal em runs intensas.</p>
+        </div>
+        <dl class="detail-list">
+          <div class="detail-row">
+            <dt>Desenvolvimento</dt>
+            <dd>Nuvyron</dd>
+          </div>
+          <div class="detail-row">
+            <dt>Conta</dt>
+            <dd>Sem cadastro nem login para jogar.</dd>
+          </div>
+          <div class="detail-row">
+            <dt>Seu progresso</dt>
+            <dd>Mundos, itens, base e talentos salvos 100% no seu aparelho.</dd>
+          </div>
+          <div class="detail-row">
+            <dt>Modelo</dt>
+            <dd>Jogo pago premium: sem anúncios e sem microtransações.</dd>
+          </div>
+          <div class="detail-row">
+            <dt>Privacidade</dt>
+            <dd><a href="./blocs/">Leia a política do BLOCS ↗</a></dd>
+          </div>
+        </dl>
+      </section>
+
+      <section class="support-strip" aria-labelledby="support-title">
+        <div>
+          <h2 id="support-title">Vamos conversar?</h2>
+          <p>Para dúvidas sobre o BLOCS ou sua privacidade, fale com a Nuvyron.</p>
+        </div>
+        <a href="mailto:nuvyron@gmail.com">nuvyron@gmail.com ↗</a>
+      </section>
+    </template>
+
+    <footer>
+      <span>© 2026 Nuvyron</span>
+      <div class="footer-links">
+        <a id="footer-policy" href="./gridroom/">Política de Privacidade — Gridroom</a>
+        <a href="./blocs/">Política de Privacidade — BLOCS</a>
+        <a href="#jogos">Todos os jogos ↑</a>
+      </div>
     </footer>
   </div>
-  <script>const catalog = { gridroom: { title: 'Gridroom — Puzzle Games da Nuvyron', template: document.querySelector('#selected-game').innerHTML, policy: './gridroom/', name: 'Gridroom' } };
-    document.querySelectorAll('[data-game]').forEach(button => button.addEventListener('click', () => {
-      const game = catalog[button.dataset.game]; if (!game) return;
+
+  <script>
+    const catalog = {
+      gridroom: {
+        title: 'Gridroom — Puzzle Games da Nuvyron',
+        template: document.querySelector('#template-gridroom').innerHTML,
+        policy: './gridroom/',
+        name: 'Gridroom',
+        icon: './assets/gridroom-mark.png'
+      },
+      blocs: {
+        title: 'BLOCS: Survivor RPG — Nuvyron',
+        template: document.querySelector('#template-blocs').innerHTML,
+        policy: './blocs/',
+        name: 'BLOCS',
+        icon: './assets/blocs-mark.png'
+      }
+    };
+
+    function selectGame(gameKey, updateHash = false) {
+      const game = catalog[gameKey];
+      if (!game) return;
       const panel = document.querySelector('#selected-game');
-      if (panel.dataset.selectedGame !== button.dataset.game) { panel.innerHTML = game.template; panel.dataset.selectedGame = button.dataset.game; }
-      document.querySelectorAll('[data-game]').forEach(item => item.setAttribute('aria-pressed', String(item === button)));
+      panel.innerHTML = game.template;
+      panel.dataset.selectedGame = gameKey;
+
+      document.querySelectorAll('[data-game]').forEach(item => {
+        item.setAttribute('aria-pressed', String(item.dataset.game === gameKey));
+      });
+
       document.title = game.title;
-      const policy = document.querySelector('#footer-policy'); policy.href = game.policy; policy.textContent = 'Política de Privacidade — ' + game.name;
-    }));</script>
+
+      const favicon = document.querySelector('link[rel="icon"]');
+      if (favicon && game.icon) {
+        favicon.href = game.icon;
+      }
+
+      const navPolicy = document.querySelector('#nav-policy');
+      if (navPolicy) {
+        navPolicy.href = game.policy;
+      }
+
+      const footerPolicy = document.querySelector('#footer-policy');
+      if (footerPolicy) {
+        footerPolicy.href = game.policy;
+        footerPolicy.textContent = 'Política de Privacidade — ' + game.name;
+      }
+
+      if (updateHash && window.history && window.history.replaceState) {
+        window.history.replaceState(null, '', '#' + gameKey);
+      }
+    }
+
+    document.querySelectorAll('[data-game]').forEach(button => {
+      button.addEventListener('click', () => {
+        selectGame(button.dataset.game, true);
+      });
+    });
+
+    const currentHash = window.location.hash.replace('#', '').toLowerCase();
+    const urlParams = new URLSearchParams(window.location.search);
+    const paramGame = urlParams.get('game');
+    const initialGame = paramGame || (currentHash === 'blocs' ? 'blocs' : (currentHash === 'gridroom' ? 'gridroom' : 'gridroom'));
+    if (initialGame && catalog[initialGame]) {
+      selectGame(initialGame, false);
+    }
+  </script>
 </body>
 
 </html>

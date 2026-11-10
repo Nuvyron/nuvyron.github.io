@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Política de Privacidade do BLOCS: Survivor RPG, desenvolvido pela Nuvyron. Informações sobre armazenamento local de dados, ausência de anúncios e compras internas, e seus direitos.">
+  <title>Política de Privacidade — BLOCS</title>
+  <link rel="icon" href="../assets/blocs-mark.png">
+  <style>
+    :root {
+      --text: #152038;
+      --muted: #58657b;
+      --line: #e0e5ef;
+      --primary: #315bdf
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 28px
+    }
+
+    body {
+      margin: 0;
+      font: 16px/1.8 Inter, "Segoe UI", Arial, sans-serif;
+      background: #f6f8fc;
+      color: var(--text)
+    }
+
+    a {
+      color: var(--primary);
+      text-underline-offset: 4px
+    }
+
+    a:focus-visible,
+    summary:focus-visible {
+      outline: 3px solid var(--primary);
+      outline-offset: 4px
+    }
+
+    .shell {
+      max-width: 1180px;
+      margin: auto;
+      padding: 0 28px
+    }
+
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      padding: 25px 0;
+      border-bottom: 1px solid var(--line)
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: var(--text)
+    }
+
+    .brand img {
+      width: 42px;
+      height: 42px;
+      border-radius: 10px
+    }
+
+    .brand strong,
+    .brand small {
+      display: block;
+      line-height: 1.4
+    }
+
+    .brand small {
+      font-size: .72rem;
+      color: var(--muted)
+    }
+
+    .back {
+      font-size: .86rem;
+      text-decoration: none;
+      color: var(--muted)
+    }
+
+    .policy-layout {
+      display: grid;
+      grid-template-columns: 230px minmax(0, 1fr);
+      gap: 50px;
+      align-items: start;
+      padding: 42px 0 64px
+    }
+
+    .contents {
+      position: sticky;
+      top: 28px;
+      font-size: .8rem
+    }
+
+    .contents summary {
+      font-size: .72rem;
+      font-weight: 750;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      cursor: pointer;
+      margin-bottom: 16px
+    }
+
+    .contents nav {
+      display: grid;
+      gap: 11px
+    }
+
+    .contents a {
+      color: var(--muted);
+      text-decoration: none;
+      line-height: 1.5
+    }
+
+    .contents a:hover {
+      color: var(--primary)
+    }
+
+    article {
+      padding: 36px 44px 44px;
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      min-width: 0
+    }
+
+    .meta {
+      font-size: .74rem;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--primary);
+      font-weight: 700;
+      margin: 0 0 12px
+    }
+
+    h1 {
+      font-size: clamp(2rem, 3vw, 2.8rem);
+      line-height: 1.13;
+      letter-spacing: -.055em;
+      margin: 0 0 16px
+    }
+
+    .updated {
+      font-size: .82rem;
+      color: var(--muted);
+      padding-bottom: 25px;
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 26px
+    }
+
+    h2 {
+      font-size: 1.13rem;
+      line-height: 1.4;
+      letter-spacing: -.02em;
+      margin: 36px 0 12px
+    }
+
+    p,
+    li {
+      font-size: .95rem
+    }
+
+    p {
+      margin: 0 0 16px
+    }
+
+    ul {
+      padding-left: 22px
+    }
+
+    li {
+      margin-bottom: 8px
+    }
+
+    article a {
+      overflow-wrap: anywhere
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 24px 0 32px;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      font-size: .8rem;
+      color: var(--muted)
+    }
+
+    footer a {
+      color: inherit
+    }
+
+    @media(max-width:850px) {
+      .policy-layout {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        padding-top: 26px
+      }
+
+      .contents {
+        position: static;
+        background: #edf1f9;
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        padding: 18px 22px
+      }
+
+      .contents nav {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px 20px
+      }
+
+      article {
+        padding: 28px
+      }
+    }
+
+    @media(max-width:520px) {
+      .shell {
+        padding: 0 18px
+      }
+
+      article {
+        padding: 24px 20px
+      }
+
+      .contents nav {
+        grid-template-columns: 1fr
+      }
+
+      .back {
+        max-width: 100px;
+        text-align: right
+      }
+
+      footer {
+        flex-direction: column
+      }
+    }
+
+    @media(prefers-reduced-motion:reduce) {
+      html {
+        scroll-behavior: auto
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="shell">
+    <header class="topbar">
+      <a class="brand" href="../">
+        <img src="../assets/blocs-mark.png" alt="" width="42" height="42">
+        <span><strong>BLOCS</strong><small>Um jogo Nuvyron</small></span>
+      </a>
+      <a class="back" href="../">← Voltar aos jogos</a>
+    </header>
+    <main class="policy-layout">
+      <aside class="contents" aria-label="Índice da política">
+        <details open>
+          <summary>Nesta política</summary>
+          <nav>
+            <a href="#secao-1">1. Informações que o aplicativo armazena</a>
+            <a href="#secao-2">2. Ausência de anúncios e rastreamento</a>
+            <a href="#secao-3">3. Compras e transações</a>
+            <a href="#secao-4">4. Como as informações são usadas e compartilhadas</a>
+            <a href="#secao-5">5. Retenção e exclusão</a>
+            <a href="#secao-6">6. Segurança</a>
+            <a href="#secao-7">7. Crianças e privacidade familiar</a>
+            <a href="#secao-8">8. Seus controles e direitos</a>
+            <a href="#secao-9">9. Permissões do dispositivo</a>
+            <a href="#secao-10">10. Alterações nesta política</a>
+            <a href="#secao-11">11. Contato</a>
+          </nav>
+        </details>
+      </aside>
+      <article>
+        <p class="meta">Nuvyron</p>
+        <h1>Política de Privacidade — BLOCS</h1>
+        <p class="updated">Última atualização: 10 de novembro de 2026</p>
+
+        <p>Esta Política de Privacidade descreve de forma clara e transparente como as informações são tratadas no aplicativo <strong>BLOCS: Survivor RPG</strong> (ou simplesmente "BLOCS"), desenvolvido e publicado pela <strong>Nuvyron</strong>.</p>
+        <p>O BLOCS opera como um jogo independente pago (premium) para Android. O jogo não exige cadastro ou criação de contas, não veicula anúncios de terceiros e não possui compras internas adicionais com dinheiro real. Toda a experiência e o progresso funcionam localmente no seu dispositivo.</p>
+
+        <h2 id="secao-1">1. Informações que o aplicativo armazena</h2>
+        <p>Para garantir que o jogo funcione adequadamente e permita que você continue sua jornada de onde parou, o aplicativo armazena dados técnicos e de jogo exclusivamente no armazenamento local do seu próprio aparelho (sandbox do aplicativo / armazenamento local protegido). Essas informações incluem:</p>
+        <ul>
+          <li><strong>Progresso de jogo:</strong> sementes de geração do mundo, mapas explorados, estado da base, construções, pisos, decorações e waystones;</li>
+          <li><strong>Estatísticas e personagem:</strong> armas desbloqueadas, níveis de talentos, inventário, equipamentos, artefatos e atributos acumulados;</li>
+          <li><strong>Economia interna do jogo:</strong> moedas virtuais do jogo (conquistadas unicamente derrotando inimigos ou vendendo itens a comerciantes no jogo), itens comprados na loja interna e melhorias da vila;</li>
+          <li><strong>Customizações do ateliê:</strong> visuais desbloqueados e personalizações visuais de paleta salvas;</li>
+          <li><strong>Preferências do jogador:</strong> configurações de áudio (música e efeitos sonoros), opções de controle por toque e orientação de tela.</li>
+        </ul>
+        <p>A Nuvyron <strong>não opera servidores de jogos</strong> e <strong>não recebe, não armazena e não transmite</strong> seus dados locais de jogo. O jogo não solicita acesso a contatos, localização geográfica precisa, câmera ou microfone.</p>
+
+        <h2 id="secao-2">2. Ausência de anúncios e rastreamento</h2>
+        <p>O BLOCS <strong>não exibe anúncios publicitários</strong> (banners, intersticiais ou vídeos com recompensa) e não contém kits de desenvolvimento (SDKs) de redes de anúncios ou corretoras de dados.</p>
+        <p>Nós não coletamos nem usamos o identificador de publicidade (Advertising ID) do Android para fins de rastreamento, perfilamento comportamental ou campanhas de marketing direcionadas.</p>
+
+        <h2 id="secao-3">3. Compras e transações</h2>
+        <p>O BLOCS é distribuído na Google Play Store como uma compra premium única. A cobrança e o processamento do pagamento são realizados diretamente pela infraestrutura segura do Google Play (Google Play Billing).</p>
+        <p>A Nuvyron não tem acesso a dados financeiros confidenciais, como números de cartão de crédito, códigos de segurança ou dados bancários utilizados na aquisição do jogo na loja.</p>
+        <p>Dentro do BLOCS, <strong>não há compras adicionais com dinheiro real (microtransações)</strong>. Todas as moedas, itens, armas e visuais disponíveis no jogo são desbloqueados exclusivamente através da jogabilidade normal.</p>
+
+        <h2 id="secao-4">4. Como as informações são usadas e compartilhadas</h2>
+        <p>Os dados armazenados localmente têm a única e estrita função de salvar partidas, carregar configurações e renderizar o mundo do jogo de forma contínua.</p>
+        <p>A Nuvyron <strong>não vende, não compartilha, não monetiza e não transfere</strong> nenhum dado pessoal de seus usuários para terceiros. O aplicativo interage apenas com os serviços essenciais do sistema operacional e da loja de aplicativos do Google Play para instalação, atualizações e validação de licença padrão, conforme as políticas aplicáveis da plataforma:</p>
+        <ul>
+          <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Política de Privacidade do Google</a></li>
+          <li><a href="https://support.google.com/googleplay/answer/2850369" target="_blank" rel="noopener noreferrer">Termos e Privacidade do Google Play</a></li>
+        </ul>
+
+        <h2 id="secao-5">5. Retenção e exclusão</h2>
+        <p>Todos os dados de progresso e preferências são mantidos exclusivamente no seu aparelho. Os dados permanecem salvos até que você decida apagá-los.</p>
+        <p>Você pode remover todos os dados do jogo a qualquer momento:</p>
+        <ul>
+          <li>Limpando os dados de armazenamento do aplicativo nas configurações de aplicativos do sistema Android;</li>
+          <li>Desinstalando o aplicativo do seu dispositivo;</li>
+          <li>Ou iniciando uma nova partida ("Novo Mundo") dentro do menu de pausa do próprio jogo, o que substitui o salvamento local anterior.</li>
+        </ul>
+        <p>Como a Nuvyron não mantém servidores com contas de jogadores, não possuímos cópias externas de seus dados para excluir ou recuperar.</p>
+
+        <h2 id="secao-6">6. Segurança</h2>
+        <p>Os dados de jogo são protegidos pelo isolamento de processos (sandbox) nativo do sistema Android, que impede que outros aplicativos acessem o diretório de dados privados do BLOCS. Como nenhuma informação pessoal é transmitida ou mantida em servidores remotos próprios, o risco de vazamentos externos através da Nuvyron é eliminado.</p>
+
+        <h2 id="secao-7">7. Crianças e privacidade familiar</h2>
+        <p>O BLOCS foi desenvolvido como um jogo voltado para entretenimento geral. Não coletamos intencionalmente informações de identificação pessoal de crianças ou de qualquer outro usuário.</p>
+        <p>O aplicativo não inclui salas de bate-papo, não permite comunicação online aberta entre estranhos, não possui anúncios e não incentiva gastos financeiros involuntários, oferecendo uma experiência segura e familiar.</p>
+
+        <h2 id="secao-8">8. Seus controles e direitos</h2>
+        <p>Em conformidade com a legislação de proteção de dados aplicável — incluindo a Lei Geral de Proteção de Dados (LGPD — Lei nº 13.709/2018) no Brasil e o Regulamento Geral sobre a Proteção de Dados (GDPR) na União Europeia —, você possui pleno controle sobre os seus dados.</p>
+        <p>Dado que a Nuvyron não armazena nem processa dados pessoais em servidores próprios, o exercício do direito de acesso, correção ou exclusão é exercido diretamente por você no seu dispositivo, mediante os controles do jogo e do sistema operacional descritos na seção de Retenção e Exclusão.</p>
+
+        <h2 id="secao-9">9. Permissões do dispositivo</h2>
+        <p>O aplicativo foi concebido sob o princípio do privilégio mínimo:</p>
+        <ul>
+          <li><strong>Acesso à rede (INTERNET):</strong> necessária para o carregamento do ambiente de execução do aplicativo (WebView/Capacitor). O jogo não envia telemetria ou dados pessoais para servidores externos;</li>
+          <li><strong>Sem permissões invasivas:</strong> o BLOCS <strong>não</strong> solicita nem utiliza acesso a contatos, localização GPS precisa, câmera, microfone, sensores corporais ou arquivos pessoais de mídia do aparelho.</li>
+        </ul>
+
+        <h2 id="secao-10">10. Alterações nesta política</h2>
+        <p>Esta Política de Privacidade poderá ser revisada periodicamente para refletir eventuais atualizações no jogo ou para cumprir novas exigências normativas da Google Play Store. A data de última atualização no topo desta página identificará sempre a versão em vigor. Quaisquer alterações serão publicadas diretamente nesta página.</p>
+
+        <h2 id="secao-11">11. Contato</h2>
+        <p>Se você tiver dúvidas, comentários ou solicitações relacionadas a esta Política de Privacidade ou ao aplicativo BLOCS, entre em contato diretamente conosco pelo e-mail: <a href="mailto:nuvyron@gmail.com">nuvyron@gmail.com</a>.</p>
+      </article>
+    </main>
+    <footer>
+      <span>© 2026 Nuvyron · BLOCS</span>
+      <a href="mailto:nuvyron@gmail.com">nuvyron@gmail.com</a>
+      <a href="../">Voltar ao início ↑</a>
+    </footer>
+  </div>
+</body>
+
+</html>

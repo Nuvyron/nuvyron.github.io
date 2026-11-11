@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description"
-    content="Conheça os jogos da Nuvyron: Gridroom e BLOCS. Informações sobre os jogos, contato e políticas de privacidade.">
+    content="Conheça os jogos da Nuvyron: Gridroom, BLOCS, Critter Overload e Sproutshore: Idle Farm. Informações sobre os jogos, contato e políticas de privacidade.">
   <meta name="theme-color" content="#f6f8fc">
-  <title>Jogos Nuvyron — Gridroom & BLOCS</title>
+  <title>Jogos Nuvyron — Catálogo Oficial & Políticas de Privacidade</title>
   <link rel="icon" href="./assets/gridroom-mark.png">
   <style>
     :root {
@@ -154,7 +154,7 @@
       width: 56px;
       height: 56px;
       border-radius: 12px;
-      object-fit: contain
+      object-fit: cover
     }
 
     .game-option strong,
@@ -285,7 +285,7 @@
       width: 100%;
       height: 100%;
       display: block;
-      object-fit: contain
+      object-fit: cover
     }
 
     .game-details {
@@ -463,7 +463,7 @@
     <section class="catalog" id="jogos" aria-labelledby="catalog-title">
       <div class="catalog-heading">
         <h2 id="catalog-title">Nossos jogos</h2>
-        <span>02 jogos no catálogo</span>
+        <span>04 jogos no catálogo</span>
       </div>
       <div class="game-carousel" role="group" aria-label="Selecione um jogo">
         <button class="game-option" type="button" data-game="gridroom" aria-pressed="true" aria-controls="selected-game">
@@ -474,6 +474,16 @@
         <button class="game-option" type="button" data-game="blocs" aria-pressed="false" aria-controls="selected-game">
           <img src="./assets/blocs-mark.png" alt="" width="56" height="56">
           <span><strong>BLOCS</strong><small>Survivor RPG</small></span>
+          <span class="selected-dot" aria-hidden="true"></span>
+        </button>
+        <button class="game-option" type="button" data-game="critter-overload" aria-pressed="false" aria-controls="selected-game">
+          <img src="./assets/critter-overload-mark.png" alt="" width="56" height="56">
+          <span><strong>Critter Overload</strong><small>Monster Autobattler</small></span>
+          <span class="selected-dot" aria-hidden="true"></span>
+        </button>
+        <button class="game-option" type="button" data-game="sproutshore" aria-pressed="false" aria-controls="selected-game">
+          <img src="./assets/sproutshore-mark.png" alt="" width="56" height="56">
+          <span><strong>Sproutshore</strong><small>Idle Farm</small></span>
           <span class="selected-dot" aria-hidden="true"></span>
         </button>
       </div>
@@ -664,11 +674,135 @@
       </section>
     </template>
 
+    <template id="template-critter-overload">
+      <section class="hero" aria-label="Apresentação do Critter Overload">
+        <section>
+          <p class="eyebrow">Um jogo Nuvyron</p>
+          <h1>Critter Overload:<br />domine o poder das criaturas.</h1>
+          <p class="lead">Um autobattler tático pixel art de coleção de monstros. Forme sua equipe de 4 criaturas, destrinche árvores de constelações únicas e encare uma campanha de 999 ondas.</p>
+          <div class="actions">
+            <a class="primary-btn" href="#sobre-jogo">Conheça o jogo</a>
+            <a class="secondary-btn" href="./critter-overload/">Política de privacidade</a>
+          </div>
+          <p class="hero-note">Da Nuvyron, estúdio independente de jogos digitais.</p>
+        </section>
+
+        <div class="showcase" aria-hidden="true">
+          <div class="board-card">
+            <div class="logo-art">
+              <img alt="Critter Overload logo" src="./assets/critter-overload-mark.png" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="game-details" id="sobre-jogo" aria-labelledby="about-title">
+        <div>
+          <p class="section-label">Sobre o Critter Overload</p>
+          <h2 id="about-title">Formação, sinergia<br>e evolução tática.</h2>
+          <p>No Critter Overload, cada criatura possui habilidades únicas de combate, passivas de suporte e árvores de evolução cósmicas. Monte composições com raios, venenos, escudos e clones para superar chefes titânicos.</p>
+        </div>
+        <dl class="detail-list">
+          <div class="detail-row">
+            <dt>Desenvolvimento</dt>
+            <dd>Nuvyron</dd>
+          </div>
+          <div class="detail-row">
+            <dt>Conta</dt>
+            <dd>Sem cadastro nem login para jogar.</dd>
+          </div>
+          <div class="detail-row">
+            <dt>Seu progresso</dt>
+            <dd>Monstros, ondas, essência e constelações salvos no dispositivo.</dd>
+          </div>
+          <div class="detail-row">
+            <dt>No Android</dt>
+            <dd>Anúncios premiados opcionais e compras digitais via Google.</dd>
+          </div>
+          <div class="detail-row">
+            <dt>Privacidade</dt>
+            <dd><a href="./critter-overload/">Leia a política do Critter Overload ↗</a></dd>
+          </div>
+        </dl>
+      </section>
+
+      <section class="support-strip" aria-labelledby="support-title">
+        <div>
+          <h2 id="support-title">Vamos conversar?</h2>
+          <p>Para dúvidas sobre o Critter Overload ou sua privacidade, fale com a Nuvyron.</p>
+        </div>
+        <a href="mailto:nuvyron@gmail.com">nuvyron@gmail.com ↗</a>
+      </section>
+    </template>
+
+    <template id="template-sproutshore">
+      <section class="hero" aria-label="Apresentação do Sproutshore: Idle Farm">
+        <section>
+          <p class="eyebrow">Um jogo Nuvyron</p>
+          <h1>Sproutshore:<br />cultive sua ilha voxel.</h1>
+          <p class="lead">Um jogo incremental e relaxante de fazenda em ilhas 3D. Plante culturas variadas, adapte-se ao clima, automatize a colheita com ajudantes e expanda seu arquipélago.</p>
+          <div class="actions">
+            <a class="primary-btn" href="#sobre-jogo">Conheça o jogo</a>
+            <a class="secondary-btn" href="./sproutshore/">Política de privacidade</a>
+          </div>
+          <p class="hero-note">Da Nuvyron, estúdio independente de jogos digitais.</p>
+        </section>
+
+        <div class="showcase" aria-hidden="true">
+          <div class="board-card">
+            <div class="logo-art">
+              <img alt="Sproutshore logo" src="./assets/sproutshore-mark.png" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="game-details" id="sobre-jogo" aria-labelledby="about-title">
+        <div>
+          <p class="section-label">Sobre o Sproutshore</p>
+          <h2 id="about-title">Plante, expanda<br>e colha no seu ritmo.</h2>
+          <p>Sproutshore: Idle Farm combina a leveza dos jogos idle com a estética charmosa de ilhas voxel procedurais. Desbloqueie culturas exclusivas, evolua suas ferramentas e veja o cenário florescer ao redor da sua fazenda.</p>
+        </div>
+        <dl class="detail-list">
+          <div class="detail-row">
+            <dt>Desenvolvimento</dt>
+            <dd>Nuvyron</dd>
+          </div>
+          <div class="detail-row">
+            <dt>Conta</dt>
+            <dd>Sem cadastro nem login para jogar.</dd>
+          </div>
+          <div class="detail-row">
+            <dt>Seu progresso</dt>
+            <dd>Lotes, colheitas, expansões e árvores agrícolas salvos no aparelho.</dd>
+          </div>
+          <div class="detail-row">
+            <dt>No Android</dt>
+            <dd>Vídeos premiados facultativos e melhorias opcionais via Google.</dd>
+          </div>
+          <div class="detail-row">
+            <dt>Privacidade</dt>
+            <dd><a href="./sproutshore/">Leia a política do Sproutshore ↗</a></dd>
+          </div>
+        </dl>
+      </section>
+
+      <section class="support-strip" aria-labelledby="support-title">
+        <div>
+          <h2 id="support-title">Vamos conversar?</h2>
+          <p>Para dúvidas sobre o Sproutshore: Idle Farm ou sua privacidade, fale com a Nuvyron.</p>
+        </div>
+        <a href="mailto:nuvyron@gmail.com">nuvyron@gmail.com ↗</a>
+      </section>
+    </template>
+
     <footer>
       <span>© 2026 Nuvyron</span>
       <div class="footer-links">
         <a id="footer-policy" href="./gridroom/">Política de Privacidade — Gridroom</a>
         <a href="./blocs/">Política de Privacidade — BLOCS</a>
+        <a href="./critter-overload/">Política de Privacidade — Critter Overload</a>
+        <a href="./sproutshore/">Política de Privacidade — Sproutshore</a>
         <a href="#jogos">Todos os jogos ↑</a>
       </div>
     </footer>
@@ -689,6 +823,20 @@
         policy: './blocs/',
         name: 'BLOCS',
         icon: './assets/blocs-mark.png'
+      },
+      'critter-overload': {
+        title: 'Critter Overload — Nuvyron',
+        template: document.querySelector('#template-critter-overload').innerHTML,
+        policy: './critter-overload/',
+        name: 'Critter Overload',
+        icon: './assets/critter-overload-mark.png'
+      },
+      sproutshore: {
+        title: 'Sproutshore: Idle Farm — Nuvyron',
+        template: document.querySelector('#template-sproutshore').innerHTML,
+        policy: './sproutshore/',
+        name: 'Sproutshore: Idle Farm',
+        icon: './assets/sproutshore-mark.png'
       }
     };
 
@@ -735,7 +883,15 @@
     const currentHash = window.location.hash.replace('#', '').toLowerCase();
     const urlParams = new URLSearchParams(window.location.search);
     const paramGame = urlParams.get('game');
-    const initialGame = paramGame || (currentHash === 'blocs' ? 'blocs' : (currentHash === 'gridroom' ? 'gridroom' : 'gridroom'));
+    const normalizeGame = (key) => {
+      if (!key) return null;
+      if (key === 'critter' || key === 'critter-overload' || key === 'critteroverload') return 'critter-overload';
+      if (key === 'blocs') return 'blocs';
+      if (key === 'gridroom') return 'gridroom';
+      if (key === 'sproutshore' || key === 'idleharvest' || key === 'sprout' || key === 'idle-harvest') return 'sproutshore';
+      return null;
+    };
+    const initialGame = normalizeGame(paramGame) || normalizeGame(currentHash) || 'gridroom';
     if (initialGame && catalog[initialGame]) {
       selectGame(initialGame, false);
     }

@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Política de Privacidade do Sproutshore: Idle Farm, desenvolvido pela Nuvyron. Informações sobre armazenamento local de dados, anúncios premiados, compras opcionais e seus direitos.">
+  <title>Política de Privacidade — Sproutshore: Idle Farm</title>
+  <link rel="icon" href="../assets/sproutshore-mark.png">
+  <style>
+    :root {
+      --text: #152038;
+      --muted: #58657b;
+      --line: #e0e5ef;
+      --primary: #315bdf
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 28px
+    }
+
+    body {
+      margin: 0;
+      font: 16px/1.8 Inter, "Segoe UI", Arial, sans-serif;
+      background: #f6f8fc;
+      color: var(--text)
+    }
+
+    a {
+      color: var(--primary);
+      text-underline-offset: 4px
+    }
+
+    a:focus-visible,
+    summary:focus-visible {
+      outline: 3px solid var(--primary);
+      outline-offset: 4px
+    }
+
+    .shell {
+      max-width: 1180px;
+      margin: auto;
+      padding: 0 28px
+    }
+
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      padding: 25px 0;
+      border-bottom: 1px solid var(--line)
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: var(--text)
+    }
+
+    .brand img {
+      width: 42px;
+      height: 42px;
+      border-radius: 10px;
+      object-fit: cover
+    }
+
+    .brand strong,
+    .brand small {
+      display: block;
+      line-height: 1.4
+    }
+
+    .brand small {
+      font-size: .72rem;
+      color: var(--muted)
+    }
+
+    .back {
+      font-size: .86rem;
+      text-decoration: none;
+      color: var(--muted)
+    }
+
+    .policy-layout {
+      display: grid;
+      grid-template-columns: 230px minmax(0, 1fr);
+      gap: 50px;
+      align-items: start;
+      padding: 42px 0 64px
+    }
+
+    .contents {
+      position: sticky;
+      top: 28px;
+      font-size: .8rem
+    }
+
+    .contents summary {
+      font-size: .72rem;
+      font-weight: 750;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      cursor: pointer;
+      margin-bottom: 16px
+    }
+
+    .contents nav {
+      display: grid;
+      gap: 11px
+    }
+
+    .contents a {
+      color: var(--muted);
+      text-decoration: none;
+      line-height: 1.5
+    }
+
+    .contents a:hover {
+      color: var(--primary)
+    }
+
+    article {
+      padding: 36px 44px 44px;
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      min-width: 0
+    }
+
+    .meta {
+      font-size: .74rem;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--primary);
+      font-weight: 700;
+      margin: 0 0 12px
+    }
+
+    h1 {
+      font-size: clamp(2rem, 3vw, 2.8rem);
+      line-height: 1.13;
+      letter-spacing: -.055em;
+      margin: 0 0 16px
+    }
+
+    .updated {
+      font-size: .82rem;
+      color: var(--muted);
+      padding-bottom: 25px;
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 26px
+    }
+
+    h2 {
+      font-size: 1.13rem;
+      line-height: 1.4;
+      letter-spacing: -.02em;
+      margin: 36px 0 12px
+    }
+
+    p,
+    li {
+      font-size: .95rem
+    }
+
+    p {
+      margin: 0 0 16px
+    }
+
+    ul {
+      padding-left: 22px
+    }
+
+    li {
+      margin-bottom: 8px
+    }
+
+    article a {
+      overflow-wrap: anywhere
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 24px 0 32px;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      font-size: .8rem;
+      color: var(--muted)
+    }
+
+    footer a {
+      color: inherit
+    }
+
+    @media(max-width:850px) {
+      .policy-layout {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        padding-top: 26px
+      }
+
+      .contents {
+        position: static;
+        background: #edf1f9;
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        padding: 18px 22px
+      }
+
+      .contents nav {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px 20px
+      }
+
+      article {
+        padding: 28px
+      }
+    }
+
+    @media(max-width:520px) {
+      .shell {
+        padding: 0 18px
+      }
+
+      article {
+        padding: 24px 20px
+      }
+
+      .contents nav {
+        grid-template-columns: 1fr
+      }
+
+      .back {
+        max-width: 100px;
+        text-align: right
+      }
+
+      footer {
+        flex-direction: column
+      }
+    }
+
+    @media(prefers-reduced-motion:reduce) {
+      html {
+        scroll-behavior: auto
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="shell">
+    <header class="topbar">
+      <a class="brand" href="../">
+        <img src="../assets/sproutshore-mark.png" alt="" width="42" height="42">
+        <span><strong>Sproutshore</strong><small>Idle Farm · Nuvyron</small></span>
+      </a>
+      <a class="back" href="../">← Voltar aos jogos</a>
+    </header>
+    <main class="policy-layout">
+      <aside class="contents" aria-label="Índice da política">
+        <details open>
+          <summary>Nesta política</summary>
+          <nav>
+            <a href="#secao-1">1. Informações que o aplicativo armazena</a>
+            <a href="#secao-2">2. Anúncios premiados e consentimento</a>
+            <a href="#secao-3">3. Compras no aplicativo</a>
+            <a href="#secao-4">4. Como as informações são usadas e compartilhadas</a>
+            <a href="#secao-5">5. Retenção e exclusão</a>
+            <a href="#secao-6">6. Segurança</a>
+            <a href="#secao-7">7. Crianças e privacidade familiar</a>
+            <a href="#secao-8">8. Seus controles e direitos</a>
+            <a href="#secao-9">9. Transferências internacionais</a>
+            <a href="#secao-10">10. Alterações nesta política</a>
+            <a href="#secao-11">11. Contato</a>
+          </nav>
+        </details>
+      </aside>
+      <article>
+        <p class="meta">Nuvyron</p>
+        <h1>Política de Privacidade — Sproutshore: Idle Farm</h1>
+        <p class="updated">Última atualização: 10 de novembro de 2026</p>
+
+        <p>Esta Política de Privacidade esclarece como os dados e as configurações dos jogadores são tratados no jogo <strong>Sproutshore: Idle Farm</strong> (também conhecido como "IdleHarvest" durante o desenvolvimento), criado e distribuído pela <strong>Nuvyron</strong>.</p>
+        <p>O Sproutshore: Idle Farm é um jogo incremental e relaxante de simulação de fazenda em ilhas voxel 3D. O jogo não exige criação de contas ou cadastro. O progresso da sua fazenda fica armazenado localmente no dispositivo. Na versão para Android, anúncios premiados voluntários e compras digitais opcionais utilizam os serviços seguros do Google.</p>
+
+        <h2 id="secao-1">1. Informações que o aplicativo armazena</h2>
+        <p>O aplicativo salva exclusivamente na memória local do aparelho (armazenamento seguro isolado do aplicativo / armazenamento local) os dados essenciais para o funcionamento e continuidade da fazenda, que incluem:</p>
+        <ul>
+          <li><strong>Estado da fazenda e da ilha:</strong> loteamentos desbloqueados, tipo de solo, culturas plantadas por lote, estágios de crescimento e expansões territoriais da ilha;</li>
+          <li><strong>Culturas e colheitas:</strong> tipos de sementes descobertas (trigo, milho, cenoura, tomate, etc.), histórico de produção e colheita acumulada;</li>
+          <li><strong>Economia e melhorias:</strong> moedas virtuais, gemas obtidas em jogo, níveis de automação com fazendeiros e árvores de habilidades agrícolas;</li>
+          <li><strong>Cenário procedural:</strong> evolução e sementes visuais das ilhotas costeiras vizinhas decorativas;</li>
+          <li><strong>Preferências do jogador:</strong> volumes sonoros independentes (efeitos, música instrumental e sons de ambiente/clima), idioma e opções gráficas.</li>
+        </ul>
+        <p>A Nuvyron <strong>não mantém servidores próprios de dados de jogo</strong> e <strong>não recebe nem monitora</strong> essas informações. O aplicativo não requer nem solicita permissões invasivas de acesso a contatos, fotos, câmera, microfone ou localização geográfica por GPS.</p>
+
+        <h2 id="secao-2">2. Anúncios premiados e consentimento</h2>
+        <p>Na versão Android, o jogo pode oferecer vídeos premiados (Rewarded Ads via Google AdMob). A exibição desses anúncios é <strong>totalmente facultativa</strong>: o jogador decide se deseja assistir a um anúncio em troca de aceleradores temporários da produção da fazenda (como impulso de colheita 2x). O jogo não possui anúncios intersticiais surpresa que interrompam a experiência.</p>
+        <p>Para exibir anúncios relevantes, prevenir fraudes e auditar entregas, a rede de publicidade do Google AdMob e suas tecnologias parceiras podem coletar identificadores técnicos do dispositivo (como o Advertising ID), endereço IP e dados de interação, em conformidade com as diretrizes de privacidade do Google.</p>
+        <p>O aplicativo integra o formulário de consentimento da plataforma de mensagens do usuário (Google UMP) para respeitar as preferências de privacidade conforme a LGPD e o GDPR. O jogador também pode resetar ou desativar a personalização de anúncios diretamente nos ajustes de privacidade do sistema Android.</p>
+
+        <h2 id="secao-3">3. Compras no aplicativo</h2>
+        <p>O Sproutshore: Idle Farm oferece compras opcionais dentro do jogo para Android (como passes de melhoria e pacotes de gemas) através da API do Google Play Billing.</p>
+        <p>Toda a transação monetária é processada exclusivamente pelo Google Play. A Nuvyron não recebe nem armazena números de cartões bancários, códigos de segurança ou quaisquer dados financeiros confidenciais.</p>
+
+        <h2 id="secao-4">4. Como as informações são usadas e compartilhadas</h2>
+        <p>Os dados armazenados localmente têm o único objetivo de viabilizar a jogabilidade contínua da sua fazenda e carregar seus ajustes ao reabrir o app.</p>
+        <p>A Nuvyron <strong>não vende, não aluga e não repassa</strong> informações pessoais a terceiros. As conexões externas ocorrem estritamente com os serviços padrão do Google para funcionamento da loja e anúncios autorizados:</p>
+        <ul>
+          <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Política de Privacidade do Google</a></li>
+          <li><a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener noreferrer">Como o Google gerencia informações em aplicativos parceiros</a></li>
+          <li><a href="https://support.google.com/googleplay/answer/2850369" target="_blank" rel="noopener noreferrer">Termos e Privacidade do Google Play</a></li>
+        </ul>
+
+        <h2 id="secao-5">5. Retenção e exclusão</h2>
+        <p>O estado da fazenda e as configurações permanecem no aparelho até que o jogador resolva excluí-los. Você pode apagar todos os dados salvos das seguintes formas:</p>
+        <ul>
+          <li>Limpando os dados do aplicativo nas Configurações de Aplicativos do Android;</li>
+          <li>Ou desinstalando o Sproutshore: Idle Farm do seu dispositivo.</li>
+        </ul>
+        <p>Como a Nuvyron não opera banco de dados remoto com cópias do seu jogo, não possuímos arquivos para recuperar ou excluir externamente.</p>
+
+        <h2 id="secao-6">6. Segurança</h2>
+        <p>Os dados salvos ficam protegidos pelo isolamento de aplicativos (sandbox) padrão do sistema operacional Android. Serviços financeiros e de anúncios utilizam a infraestrutura criptografada e autenticada do Google.</p>
+
+        <h2 id="secao-7">7. Crianças e privacidade familiar</h2>
+        <p>O Sproutshore: Idle Farm é uma experiência de entretenimento para todas as idades. O jogo não coleta intencionalmente dados pessoais de crianças nem possui recursos sociais com bate-papo aberto entre usuários desconhecidos. As ofertas de anúncios premiados opcionais seguem as diretrizes para famílias da Google Play Store.</p>
+
+        <h2 id="secao-8">8. Seus controles e direitos</h2>
+        <p>Em conformidade com a Lei Geral de Proteção de Dados (LGPD) e o Regulamento Geral sobre a Proteção de Dados (GDPR), você mantém pleno controle sobre o uso de suas informações. Os direitos de exclusão e consulta são exercidos diretamente no aparelho por meio das opções do sistema e do gerenciamento de privacidade de sua conta Google.</p>
+
+        <h2 id="secao-9">9. Transferências internacionais</h2>
+        <p>Os serviços de pagamento do Google Play e a veiculação de anúncios premiados do Google AdMob podem transferir e processar dados técnicos em servidores internacionais mantidos pela Google LLC, sob salvaguardas contratuais e regulatórias cabíveis.</p>
+
+        <h2 id="secao-10">10. Alterações nesta política</h2>
+        <p>Esta Política de Privacidade pode ser atualizada periodicamente para acompanhar novos recursos do jogo ou ajustes regulatórios. Qualquer revisão será disponibilizada diretamente nesta página com a respectiva data de atualização.</p>
+
+        <h2 id="secao-11">11. Contato</h2>
+        <p>Para dúvidas, comentários ou esclarecimentos sobre o Sproutshore: Idle Farm ou sobre esta política, entre em contato com a Nuvyron pelo e-mail: <a href="mailto:nuvyron@gmail.com">nuvyron@gmail.com</a>.</p>
+      </article>
+    </main>
+    <footer>
+      <span>© 2026 Nuvyron · Sproutshore: Idle Farm</span>
+      <a href="mailto:nuvyron@gmail.com">nuvyron@gmail.com</a>
+      <a href="../">Voltar ao início ↑</a>
+    </footer>
+  </div>
+</body>
+
+</html>

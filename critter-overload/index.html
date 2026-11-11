@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Política de Privacidade do Critter Overload, desenvolvido pela Nuvyron. Informações sobre armazenamento local de dados, anúncios premiados, compras opcionais e seus direitos.">
+  <title>Política de Privacidade — Critter Overload</title>
+  <link rel="icon" href="../assets/critter-overload-mark.png">
+  <style>
+    :root {
+      --text: #152038;
+      --muted: #58657b;
+      --line: #e0e5ef;
+      --primary: #315bdf
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 28px
+    }
+
+    body {
+      margin: 0;
+      font: 16px/1.8 Inter, "Segoe UI", Arial, sans-serif;
+      background: #f6f8fc;
+      color: var(--text)
+    }
+
+    a {
+      color: var(--primary);
+      text-underline-offset: 4px
+    }
+
+    a:focus-visible,
+    summary:focus-visible {
+      outline: 3px solid var(--primary);
+      outline-offset: 4px
+    }
+
+    .shell {
+      max-width: 1180px;
+      margin: auto;
+      padding: 0 28px
+    }
+
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      padding: 25px 0;
+      border-bottom: 1px solid var(--line)
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: var(--text)
+    }
+
+    .brand img {
+      width: 42px;
+      height: 42px;
+      border-radius: 10px;
+      object-fit: cover
+    }
+
+    .brand strong,
+    .brand small {
+      display: block;
+      line-height: 1.4
+    }
+
+    .brand small {
+      font-size: .72rem;
+      color: var(--muted)
+    }
+
+    .back {
+      font-size: .86rem;
+      text-decoration: none;
+      color: var(--muted)
+    }
+
+    .policy-layout {
+      display: grid;
+      grid-template-columns: 230px minmax(0, 1fr);
+      gap: 50px;
+      align-items: start;
+      padding: 42px 0 64px
+    }
+
+    .contents {
+      position: sticky;
+      top: 28px;
+      font-size: .8rem
+    }
+
+    .contents summary {
+      font-size: .72rem;
+      font-weight: 750;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      cursor: pointer;
+      margin-bottom: 16px
+    }
+
+    .contents nav {
+      display: grid;
+      gap: 11px
+    }
+
+    .contents a {
+      color: var(--muted);
+      text-decoration: none;
+      line-height: 1.5
+    }
+
+    .contents a:hover {
+      color: var(--primary)
+    }
+
+    article {
+      padding: 36px 44px 44px;
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      min-width: 0
+    }
+
+    .meta {
+      font-size: .74rem;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--primary);
+      font-weight: 700;
+      margin: 0 0 12px
+    }
+
+    h1 {
+      font-size: clamp(2rem, 3vw, 2.8rem);
+      line-height: 1.13;
+      letter-spacing: -.055em;
+      margin: 0 0 16px
+    }
+
+    .updated {
+      font-size: .82rem;
+      color: var(--muted);
+      padding-bottom: 25px;
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 26px
+    }
+
+    h2 {
+      font-size: 1.13rem;
+      line-height: 1.4;
+      letter-spacing: -.02em;
+      margin: 36px 0 12px
+    }
+
+    p,
+    li {
+      font-size: .95rem
+    }
+
+    p {
+      margin: 0 0 16px
+    }
+
+    ul {
+      padding-left: 22px
+    }
+
+    li {
+      margin-bottom: 8px
+    }
+
+    article a {
+      overflow-wrap: anywhere
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 24px 0 32px;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      font-size: .8rem;
+      color: var(--muted)
+    }
+
+    footer a {
+      color: inherit
+    }
+
+    @media(max-width:850px) {
+      .policy-layout {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        padding-top: 26px
+      }
+
+      .contents {
+        position: static;
+        background: #edf1f9;
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        padding: 18px 22px
+      }
+
+      .contents nav {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px 20px
+      }
+
+      article {
+        padding: 28px
+      }
+    }
+
+    @media(max-width:520px) {
+      .shell {
+        padding: 0 18px
+      }
+
+      article {
+        padding: 24px 20px
+      }
+
+      .contents nav {
+        grid-template-columns: 1fr
+      }
+
+      .back {
+        max-width: 100px;
+        text-align: right
+      }
+
+      footer {
+        flex-direction: column
+      }
+    }
+
+    @media(prefers-reduced-motion:reduce) {
+      html {
+        scroll-behavior: auto
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="shell">
+    <header class="topbar">
+      <a class="brand" href="../">
+        <img src="../assets/critter-overload-mark.png" alt="" width="42" height="42">
+        <span><strong>Critter Overload</strong><small>Um jogo Nuvyron</small></span>
+      </a>
+      <a class="back" href="../">← Voltar aos jogos</a>
+    </header>
+    <main class="policy-layout">
+      <aside class="contents" aria-label="Índice da política">
+        <details open>
+          <summary>Nesta política</summary>
+          <nav>
+            <a href="#secao-1">1. Informações que o aplicativo armazena</a>
+            <a href="#secao-2">2. Anúncios premiados e consentimento</a>
+            <a href="#secao-3">3. Compras no aplicativo</a>
+            <a href="#secao-4">4. Como as informações são usadas e compartilhadas</a>
+            <a href="#secao-5">5. Retenção e exclusão</a>
+            <a href="#secao-6">6. Segurança</a>
+            <a href="#secao-7">7. Crianças e privacidade familiar</a>
+            <a href="#secao-8">8. Seus controles e direitos</a>
+            <a href="#secao-9">9. Transferências internacionais</a>
+            <a href="#secao-10">10. Alterações nesta política</a>
+            <a href="#secao-11">11. Contato</a>
+          </nav>
+        </details>
+      </aside>
+      <article>
+        <p class="meta">Nuvyron</p>
+        <h1>Política de Privacidade — Critter Overload</h1>
+        <p class="updated">Última atualização: 10 de novembro de 2026</p>
+
+        <p>Esta Política de Privacidade explica quais informações são tratadas pelo jogo <strong>Critter Overload</strong>, como são utilizadas e quais opções estão disponíveis para os jogadores. O jogo é desenvolvido e publicado pela <strong>Nuvyron</strong>.</p>
+        <p>O Critter Overload não exige cadastro ou criação de contas de usuário. A mecânica de combate, coleção de monstros e progressão de campanha funcionam localmente no dispositivo. Na versão Android, anúncios premiados opcionais e compras digitais são fornecidos por serviços do Google.</p>
+
+        <h2 id="secao-1">1. Informações que o aplicativo armazena</h2>
+        <p>O aplicativo armazena localmente no dispositivo (armazenamento seguro do aplicativo / armazenamento local) as informações estritamente necessárias para a sua jogabilidade, incluindo:</p>
+        <ul>
+          <li><strong>Equipe e coleção:</strong> criaturas recrutadas, posições de formação, árvores de constelação/habilidades desbloqueadas e mutações;</li>
+          <li><strong>Progresso da campanha:</strong> onda atual, pontos de controle, recordes de batalha, melhorias permanentes e descobertas do bestiário;</li>
+          <li><strong>Economia e inventário:</strong> essência acumulada, ovos em incubação, pedras de habilidade forjadas e itens da loja;</li>
+          <li><strong>Preferências do jogador:</strong> volumes de trilha sonora e efeitos sonoros, velocidade de batalha e configurações de interface;</li>
+          <li><strong>Controle de recompensas:</strong> contadores temporais locais para tempo limite de descanso offline e recarga de bônus premiados.</li>
+        </ul>
+        <p>A Nuvyron <strong>não opera servidores de contas de jogo</strong> e <strong>não recebe nem armazena</strong> esses dados locais em infraestrutura própria. O aplicativo não solicita acesso a contatos, localização GPS precisa, câmera ou microfone.</p>
+
+        <h2 id="secao-2">2. Anúncios premiados e consentimento</h2>
+        <p>Na versão Android, o Critter Overload pode disponibilizar anúncios premiados (Rewarded Ads) opcionais fornecidos pelo Google AdMob. Nenhum anúncio é obrigatório ou interrompe a batalha; eles são acionados apenas quando o próprio jogador escolhe assistir a um anúncio em troca de bônus opcionais (como duplicar relatório offline ou obter reforço temporário de essência).</p>
+        <p>Para solicitar, exibir, limitar a frequência e verificar a integridade de anúncios, o Google e seus parceiros podem tratar dados técnicos, como identificador de publicidade (Advertising ID), endereço IP, dados do dispositivo e interações com o anúncio, conforme as políticas do Google.</p>
+        <p>O aplicativo utiliza a plataforma de consentimento do Google (UMP) para apresentar as opções de privacidade cabíveis de acordo com a LGPD e o GDPR. O jogador também pode gerenciar o identificador de publicidade nas configurações de privacidade do sistema Android.</p>
+
+        <h2 id="secao-3">3. Compras no aplicativo</h2>
+        <p>Na versão Android, itens digitais opcionais (como pacotes de essência ou passes permanentes de utilidade) podem ser adquiridos via Google Play Billing. O aplicativo consulta a loja do Google Play para exibir preços locais e verificar a posse de compras vinculadas à conta do usuário na loja.</p>
+        <p>O processamento financeiro é realizado integralmente pelo Google Play. A Nuvyron não recebe nem tem acesso a números de cartão de crédito, contas bancárias ou informações financeiras do comprador.</p>
+
+        <h2 id="secao-4">4. Como as informações são usadas e compartilhadas</h2>
+        <p>Os dados armazenados localmente no aparelho são utilizados exclusivamente para salvar equipes, simular as batalhas e preservar o progresso do jogador.</p>
+        <p>A Nuvyron <strong>não vende, não repassa e não comercializa</strong> informações pessoais com terceiros. Ao utilizar anúncios premiados ou efetuar compras, os serviços do Google operam de acordo com suas próprias políticas de privacidade:</p>
+        <ul>
+          <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Política de Privacidade do Google</a></li>
+          <li><a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener noreferrer">Como o Google utiliza dados de aplicativos parceiros</a></li>
+          <li><a href="https://support.google.com/googleplay/answer/2850369" target="_blank" rel="noopener noreferrer">Privacidade e Termos do Google Play</a></li>
+        </ul>
+
+        <h2 id="secao-5">5. Retenção e exclusão</h2>
+        <p>Todas as criaturas, progresso e pontuações permanecem no aparelho até que sejam apagados pelo usuário. É possível apagar os dados locais das seguintes maneiras:</p>
+        <ul>
+          <li>Utilizando a opção de reiniciar dados nas configurações internas do jogo;</li>
+          <li>Limpando os dados do aplicativo nas configurações do sistema Android;</li>
+          <li>Ou desinstalando o jogo do aparelho.</li>
+        </ul>
+        <p>Como a Nuvyron não mantém servidores remotos para armazenamento de perfis, não mantemos cópias externas para exclusão ou recuperação manual.</p>
+
+        <h2 id="secao-6">6. Segurança</h2>
+        <p>Os dados de jogo são mantidos no armazenamento privativo do aplicativo garantido pelo sistema operacional Android (sandbox). Os serviços de transações financeiras e anúncios contam com os padrões de criptografia e proteção da infraestrutura do Google.</p>
+
+        <h2 id="secao-7">7. Crianças e privacidade familiar</h2>
+        <p>O Critter Overload destina-se ao público geral e não coleta intencionalmente informações pessoais de crianças. O jogo não possui bate-papo, não expõe perfis publicamente e não exige identificação. Os anúncios premiados seguem as políticas familiares do Google Play quando aplicáveis.</p>
+
+        <h2 id="secao-8">8. Seus controles e direitos</h2>
+        <p>Em conformidade com a LGPD e o GDPR, você detém total controle sobre seus dados. Como os dados residem localmente no seu dispositivo e as transações ocorrem pelo Google Play, você pode exercer seus direitos gerenciando os dados do app no Android e suas preferências de publicidade nas configurações da conta Google.</p>
+
+        <h2 id="secao-9">9. Transferências internacionais</h2>
+        <p>Os serviços de anúncios e pagamentos prestados pelo Google podem tratar dados em servidores localizados fora do Brasil ou da sua região, em conformidade com as cláusulas contratuais padrão e garantias legais fornecidas pela Google LLC.</p>
+
+        <h2 id="secao-10">10. Alterações nesta política</h2>
+        <p>Esta política pode ser revisada para acompanhar melhorias do aplicativo ou novas diretrizes de privacidade das plataformas de distribuição. A data no topo desta página identifica a versão mais recente em vigor.</p>
+
+        <h2 id="secao-11">11. Contato</h2>
+        <p>Para dúvidas, comentários ou solicitações sobre esta política ou sobre o Critter Overload, entre em contato através do e-mail: <a href="mailto:nuvyron@gmail.com">nuvyron@gmail.com</a>.</p>
+      </article>
+    </main>
+    <footer>
+      <span>© 2026 Nuvyron · Critter Overload</span>
+      <a href="mailto:nuvyron@gmail.com">nuvyron@gmail.com</a>
+      <a href="../">Voltar ao início ↑</a>
+    </footer>
+  </div>
+</body>
+
+</html>
